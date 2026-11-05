@@ -1,0 +1,22 @@
+[package]
+name = "drivward-service"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+drivward-core = { version = "0.1.0", path = "../drivward-core" }
+drivward-ipc = { version = "0.1.0", path = "../drivward-ipc" }
+drivward-platform = { version = "0.1.0", path = "../drivward-platform" }
+rusqlite = { version = "0.41.1", features = ["bundled"] }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+thiserror = "2.0.21"
+time = { version = "0.3.55", features = ["formatting", "parsing", "macros", "local-offset"] }
+
+[target."cfg(windows)".dependencies]
+windows-service = "0.8.1"
+windows-sys = { version = "0.61.2", features = ["Win32_Foundation", "Win32_Security", "Win32_Security_Authorization", "Win32_System_Pipes", "Win32_Storage_FileSystem", "Win32_System_Power", "Win32_System_Threading", "Win32_System_IO"] }
+
+[dev-dependencies]
+tempfile = "3"

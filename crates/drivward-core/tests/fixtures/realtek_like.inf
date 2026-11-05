@@ -1,0 +1,27 @@
+; Fixture sintético con la estructura de un driver de red
+[Version]
+Signature   = "$Windows NT$"
+Class       = Net
+ClassGuid   = {4d36e972-e325-11ce-bfc1-08002be10318}
+Provider    = %Vendor%
+CatalogFile = net.cat
+DriverVer   = 03/14/2026,10.68.1.2026
+
+[Manufacturer]
+%Vendor% = Models, NTamd64.10.0...19041, NTamd64.10.0...22000, NTarm64.10.0
+
+[Models.NTamd64.10.0...19041]
+%Dev.Desc% = Install, PCI\VEN_10EC&DEV_8168&SUBSYS_00011462, PCI\VEN_10EC&DEV_8168
+
+[Models.NTamd64.10.0...22000]
+"Adaptador \
+ largo" = Install, pci\ven_10ec&dev_8125 ; comentario
+
+[Models.NTarm64.10.0]
+%Dev.Desc% = Install, PCI\VEN_10EC&DEV_8168
+
+[Strings]
+Vendor = "Vendor; Inc."
+
+[Strings.0409]
+Dev.Desc = "Gigabit Ethernet"

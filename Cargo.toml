@@ -1,0 +1,21 @@
+[workspace]
+members = [
+    "crates/drivward-core",
+    "crates/drivward-index",
+    "crates/drivward-platform",
+    "crates/drivward-ipc",
+    "crates/drivward-portable",
+    "crates/drivward-service",
+]
+exclude = ["apps/desktop/src-tauri"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "GPL-3.0-only"
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true

@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "drivward-web",
+  "compatibility_date": "2026-11-05",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
+  },
+  "routes": [{ "pattern": "drivward.sacortech.xyz", "custom_domain": true }],
+  "workers_dev": true
+}

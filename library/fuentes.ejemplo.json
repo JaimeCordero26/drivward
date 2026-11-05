@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "packages": [
+    {
+      "id": "ejemplo-wifi",
+      "category": "red/wifi",
+      "vendor": "Fabricante",
+      "description": "Paquete ZIP oficial del driver Wi-Fi para Windows 10 y 11 x64",
+      "url": "https://fabricante.example/descargas/wifi-x64.zip",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "license": "Licencia del fabricante: revisar antes de redistribuir",
+      "redistributable": false
+    }
+  ]
+}
